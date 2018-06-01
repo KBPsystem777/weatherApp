@@ -1,16 +1,31 @@
 {
   "name": "kbpsystem-weather_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Weather App created by Koleen BP",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "weather-app",
+    "api",
+    "freecodecamp",
+    "kbpsystem",
+    "local-weather"
+  ],
   "author": "Koleen Paunon",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "express": "^4.16.3"
-  }
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBPsystem777/weatherApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KBPsystem777/weatherApp/issues"
+  },
+  "homepage": "https://github.com/KBPsystem777/weatherApp#readme"
 }
