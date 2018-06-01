@@ -1,5 +1,5 @@
 {
-  "name": "weather_app",
+  "name": "kbpsystem-weather_app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,9 +7,10 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "Koleen BP",
+  "author": "Koleen Paunon",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.3"
   }
 }
