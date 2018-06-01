@@ -1,3 +1,3 @@
 # weatherApp
 
-Utilizes weather map API to display a current weather on your current location
+Utilizes FCC API to display a current weather on your current location
