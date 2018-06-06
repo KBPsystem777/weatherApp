@@ -13,7 +13,7 @@
             let latitude = crd.latitude;
             let longitude = crd.longitude;
             let endPoint = `https://fcc-weather-api.glitch.me/api/current?lat=${latitude}&lon=${longitude}`;
-
+            console.log(`User Location is Latitude: ${latitude}, Longitude: ${longitude}`);
             axios.get(endPoint)
                 .then(function (json) {
                     //console.log(endPoint)
