@@ -22,11 +22,40 @@ h1 {
 .fa {
     font-size: 22px;
     margin-right: 10px;
-    color: rgb(157, 162, 165);
+    color: #fff;
+}
+
+.fa:hover {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.fa-gitlab:hover {
+    color: #e24329;
+}
+
+.fa-github:hover {
+    color: #333;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-globe:hover {
+    color: blue;
 }
 
 #city, #country {
     font-size: 30px;
+}
+
+#clock {
+    font-size: 24px;
 }
 
 #description {
@@ -42,8 +71,8 @@ h1 {
     position: center !important;
 }
 
-#clock {
-    font-size: 24px;
+#tutorials {
+    font-size: 10px;
+    color: #fff;
 }
-
 
