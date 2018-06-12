@@ -5,7 +5,7 @@
         const url = 'https://fcc-weather-api.glitch.me/api/current?';
 
         let options = {
-            enableHighAccuracy: true
+            enableHighAccuracy: false
         };
 
         function success(pos) {
