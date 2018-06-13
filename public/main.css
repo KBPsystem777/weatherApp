@@ -6,13 +6,9 @@ body {
     padding-top: 1rem;
 }
 
-footer, button {
+footer {
     color: rgb(157, 162, 165);
     font-size: 16px;
-    position: absolute;
-    bottom: -1;
-    right: 0;
-    left: 0;
 }
 
 h1 {
