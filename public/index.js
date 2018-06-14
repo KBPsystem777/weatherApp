@@ -1,4 +1,3 @@
-
 function dataRun() {
 
     const url = 'https://fcc-weather-api.glitch.me/api/current?';
@@ -19,7 +18,7 @@ function dataRun() {
                 document.getElementById('temp').innerHTML = json.data.main.temp + '&degC';
                 document.getElementById('city').innerHTML = json.data.name + ', ' + json.data.sys.country
                 document.getElementById('description').innerHTML = json.data.weather[0].main;
-        });     
+            });
     };
 
     function error(err) {
@@ -58,9 +57,9 @@ function checkTime(i) {
 
 const fConvert = document.getElementById('fConvert');
 
-fConvert.onclick = function(event){
+fConvert.onclick = function (event) {
 
-    navigator.geolocation.getCurrentPosition(function(position) {
+    navigator.geolocation.getCurrentPosition(function (position) {
         let latitude = position.coords.latitude;
         let longitude = position.coords.longitude;
         console.log(`Converting temperature measurement to Fahreheit...`);
@@ -75,37 +74,12 @@ fConvert.onclick = function(event){
                 document.getElementById('city').innerHTML = json.data.name + ', ' + json.data.sys.country
                 document.getElementById('description').innerHTML = json.data.weather[0].main;
             });
-        
+
     });
 
 }
-
 
 //Force the page to display back the degree Celsius unit
 function reload() {
     location.reload(true);
 }
-
-
-/*
-const cConvert = document.getElementById('cConvert');
-
-cConvert.onclick = function(event) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-        let latitude = position.coords.latitude;
-        let longitude = position.coords.longitude;
-        console.log(`Converting temperature measurement to Fahreheit...`);
-        const endPoint = `https://fcc-weather-api.glitch.me/api/current?lat=${latitude}&lon=${longitude}`;
-        axios.get(endPoint)
-             .then(function (json) {
-                 let description = json.data.weather[0].description;
-                 let temperature = (json.data.main.temp * 9) / 5 + 32;
-                 document.getElementById('temp').innerHTML = temperature + '&degC';
-                 document.getElementById('city').innerHTML = json.data.name + ', ' + json.data.sys.country
-                 document.getElementById('description').innerHTML = json.data.weather[0].main;
-        });
-
-    })
-}
-
-*/
