@@ -3,7 +3,21 @@ body {
     background-color: #833471;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 1rem;
+    padding-top: 3.5rem;
+}
+
+button {
+    background-color: #833471;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    border-color: #833471;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #833471;
+    font-family: 'Ubuntu', sans-serif;
+    border-color: #833471;
 }
 
 footer {
@@ -55,6 +69,7 @@ h1 {
 
 #description {
     font-size: 20px;
+    margin-top: 1rem;
 }
 
 #measurement {
