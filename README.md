@@ -1,3 +1,3 @@
 # weatherApp
-
-Utilizes FCC API to display a current weather on your current location
+Showing your local weather details
+### Official Site: https://kbpweather.now.sh
