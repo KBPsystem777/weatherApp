@@ -1,5 +1,5 @@
+//on page on load, run this function:
 function dataRun() {
-
     const url = 'https://fcc-weather-api.glitch.me/api/current?';
 
     let options = {
@@ -54,9 +54,7 @@ function checkTime(i) {
 
 
 //Fahrenheit Converter
-
 const fConvert = document.getElementById('fConvert');
-
 fConvert.onclick = function (event) {
 
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -69,7 +67,8 @@ fConvert.onclick = function (event) {
         axios.get(endPoint)
             .then(function (json) {
                 let description = json.data.weather[0].description;
-                let temperature = (json.data.main.temp * 9) / 5 + 32;
+                let temperature = Math.round((json.data.main.temp * 9) / 5 + 32);
+                console.log(`Coverted: Temperature is: ${temperature} degree Fahrenheit`);
                 document.getElementById('temp').innerHTML = temperature + '&degF';
                 document.getElementById('city').innerHTML = json.data.name + ', ' + json.data.sys.country
                 document.getElementById('description').innerHTML = json.data.weather[0].main;
@@ -77,9 +76,29 @@ fConvert.onclick = function (event) {
 
     });
 
-}
+};
 
-//Force the page to display back the degree Celsius unit
-function reload() {
-    location.reload(true);
-}
+//Celsius Converter
+const cConvert = document.getElementById('cConvert');
+cConvert.onclick = function (event) {
+
+    navigator.geolocation.getCurrentPosition(function (position) {
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        console.log(`Converting temperature measurement to Celsius...`);
+
+        const endPoint = `https://fcc-weather-api.glitch.me/api/current?lat=${latitude}&lon=${longitude}`;
+
+        axios.get(endPoint)
+            .then(function (json) {
+                let description = json.data.weather[0].description;
+                let temperature = Math.round(json.data.main.temp);
+                console.log(`Coverted: Temperature is: ${temperature} degree Celsius`);
+                document.getElementById('temp').innerHTML = temperature + '&degC';
+                document.getElementById('city').innerHTML = json.data.name + ', ' + json.data.sys.country
+                document.getElementById('description').innerHTML = json.data.weather[0].main;
+        });
+
+    });
+
+};
