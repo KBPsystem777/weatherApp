@@ -72,6 +72,11 @@ h1 {
     margin-top: 1rem;
 }
 
+#developer:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
 #measurement {
     font-size: 14px;
 }
@@ -86,3 +91,8 @@ h1 {
     color: #fff;
 }
 
+#tutorials:hover {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    border-color: #fff;
+}
