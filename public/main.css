@@ -3,7 +3,7 @@ body {
     background-color: #833471;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
 }
 
 button {
@@ -82,7 +82,7 @@ h1 {
 }
 
 #temp {
-    font-size: 100px;
+    font-size: 80px;
     position: center !important;
 }
 
