@@ -1,1 +1,5 @@
-{}
+{
+    "name": "reactified-weather-app",
+    "version": 2,
+    "alias": "kbpsystem.weather"
+}
